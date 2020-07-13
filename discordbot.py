@@ -50,6 +50,7 @@ async def status(ctx):
     await ctx.send(f"サーバー数:{len(client.guilds)}\nユーザー数:{len(client.users)}")
 
 servers = print('グローバルチャット利用可能になりました')
+
 @client.event
 async def on_message(message):
     if message.author.bot:
