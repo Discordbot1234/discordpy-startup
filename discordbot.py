@@ -109,13 +109,6 @@ async def help(ctx):
     embed.add_field(name="k!Linkedserverlist", value="連携サーバーリストを表示します(連携サーバー登録はくけけのTwitterのDMかDiscordのDMまで)", inline=False)
     await ctx.send(embed=embed)
 
-@client.event
-async def on_command_error(ctx,error):
-    if isinstance(error,commands.CommandNotFound):
-        await ctx.channel.send(f"コマンドが正しくありません。\nk!helpを参照してください。\n実行コマンド:{ctx.content}")
-    else:
-        print(f"エラーが発生しました。\n内容:{error}")
-        await ctx.channel.send(f"**エラーが発生しました。**\nエラー内容:{error}")
 
 
 
