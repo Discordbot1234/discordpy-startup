@@ -4,7 +4,9 @@ import os
 import sys
 import asyncio
 import re
+import traceback
 client = discord.Client()
+token = os.environDiscor[DISCORD_BOT_TOKEN]
 bot=commands.Bot(command_prefix='k!')
 client =commands.Bot(command_prefix='k!')
 bot.remove_command('help')
