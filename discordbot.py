@@ -6,7 +6,7 @@ import asyncio
 import re
 import tlaceback
 
-token = os.environ['DISCOED_BOT_TOKEN']
+token = os.environ['DISCORD_BOT_TOKEN']
 
 client =commands.Bot(command_prefix='k!')
 bot=commands.Bot(command_prefix='k!')
